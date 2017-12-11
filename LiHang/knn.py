@@ -48,6 +48,7 @@ class Simple_KNN(object):
         print('acc:', float(result) / float(len(test_y)))
 
 #简单使用
+# import LiHang.knn as knn
 # train_x = [[1, 3], [2, 5], [3, 8], [2, 6], [3, 1], [4, 1], [6, 2], [7, 3]]
 # train_y = [1, 1, 1, 1, -1, -1, -1, -1]
 # a_knn = knn.Simple_KNN(train_x, train_y, 4)
