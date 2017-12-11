@@ -38,6 +38,7 @@ class Simple_Perceptron(object):
         print('test_y:', test_y)
 
 #简单使用
+# import LiHang.perceptron as per
 # train_x = [[1, 3], [2, 5], [3, 8], [2, 6], [3, 1], [4, 1], [6, 2], [7, 3]]
 # train_y = [1, 1, 1, 1, -1, -1, -1, -1]
 # 
