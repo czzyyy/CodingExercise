@@ -95,3 +95,10 @@ class Simplest_KNN(object):
                 print('iter:', j)
         print('acc:', float(result) / float(len(self.test_y)))
         return np.array(predict)
+
+#简单使用
+# import LiHang.simple_knn as sim_knn
+# a_sim_knn = sim_knn.Simplest_KNN(12, 10)
+# datasets = a_sim_knn.load_csv('data/train.csv')
+# a_sim_knn.split_dataset(datasets, 0.7)
+# a_sim_knn.test()
