@@ -37,3 +37,10 @@ class Simple_Perceptron(object):
         print('pred_y:', pred_y)
         print('test_y:', test_y)
 
+#简单使用
+# train_x = [[1, 3], [2, 5], [3, 8], [2, 6], [3, 1], [4, 1], [6, 2], [7, 3]]
+# train_y = [1, 1, 1, 1, -1, -1, -1, -1]
+# 
+# a_percep = per.Simple_Perceptron(learning_rate=0.1, train_x=train_x, train_y=train_y)
+# a_percep.train()
+# a_percep.test(train_x, train_y)
