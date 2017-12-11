@@ -103,4 +103,46 @@ class Simple_KD_Tree(object):
         self.k_list.sort(key=lambda x: x.dist)
         return nn, min_dist
 
-
+#简单使用
+# import LiHang.kd_tree as kd
+# class train_data(object):
+#     def __init__(self, train_x=None, train_y=None):
+#         self.train_x = train_x
+#         self.train_y = train_y
+# 
+# data1 = train_data([2, 3], [1])
+# data2 = train_data([5, 4], [2])
+# data3 = train_data([9, 6], [3])
+# data4 = train_data([4, 7], [3])
+# data5 = train_data([8, 1], [2])
+# data6 = train_data([7, 2], [3])
+# data_list = []
+# data_list.append(data1)
+# data_list.append(data2)
+# data_list.append(data3)
+# data_list.append(data4)
+# data_list.append(data5)
+# data_list.append(data6)
+# for d in data_list:
+#     print(d.train_x)
+# 
+# sim_kd = kd.Simple_KD_Tree(data_list, 3)
+# sim_kd_root = sim_kd.root
+# 
+# 
+# def preorder(root):
+#     print(root.element.train_x)
+#     if root.left:
+#         preorder(root.left)
+#     if root.right:
+#         preorder(root.right)
+# 
+# preorder(sim_kd_root)
+# 
+# nn, min_dist = sim_kd.find_nn([3, 4.5])
+# print('min_dist:', min_dist)
+# print('node:', nn.element.train_x)
+# for i in sim_kd.k_list:
+#     print('x:', i.element.train_x)
+#     print('y:', i.element.train_y)
+#     print('dist:', i.dist)
