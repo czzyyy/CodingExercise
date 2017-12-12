@@ -134,3 +134,24 @@ class Mix_Gaussians(object):
                 print("服从的高斯分布的协方差为:", self.sigma[int(pred)])
                 break
 
+#简单使用
+# import LiHang.mixtures_gaussians as mg
+# mus = [
+#     [5, 35],
+#     [30, 40],
+#     [20, 20],
+#     [45, 15],
+#     [25, 7],
+#     [2, 17]
+# ]
+# sigmas = [
+#     [[30, 0], [2, 30]],
+#     [[30, 14], [0, 30]],
+#     [[30, 3], [17, 30]],
+#     [[30, 2], [6, 30]],
+#     [[30, 0], [0, 30]],
+#     [[30, 22], [16, 30]]
+# ]
+# a_mix_gaussians = mg.Mix_Gaussians(6, 1000)
+# a_mix_gaussians.generate_data(1000, mus=mus, sigmas=sigmas)
+# a_mix_gaussians.train()
