@@ -96,4 +96,24 @@ class Naive_Bayes(object):
         print('predict class:', predict)
 
 
-
+#简单使用
+# import LiHang.naive_bayes as nb
+# a_naive_bayes = nb.Naive_Bayes(10, 2)
+# datasets = a_naive_bayes.load_csv('data/train.csv')
+# a_naive_bayes.split_dataset(datasets, 0.7)
+#二值处理
+# for i in range(len(a_naive_bayes.train_x)):
+#     for j in range(len(a_naive_bayes.train_x[i])):
+#         if a_naive_bayes.train_x[i][j] > 30.0:
+#             a_naive_bayes.train_x[i][j] = 1
+#         else:
+#             a_naive_bayes.train_x[i][j] = 0
+#
+# for i in range(len(a_naive_bayes.test_x)):
+#     for j in range(len(a_naive_bayes.test_x[i])):
+#         if a_naive_bayes.test_x[i][j] > 30.0:
+#             a_naive_bayes.test_x[i][j] = 1
+#         else:
+#             a_naive_bayes.test_x[i][j] = 0
+# a_naive_bayes.train()
+# a_naive_bayes.test()
