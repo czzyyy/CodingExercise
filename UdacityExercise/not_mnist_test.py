@@ -94,4 +94,4 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    main('F:/python_code/a1.png')
+    main('som_pic_sample/a1.png')
