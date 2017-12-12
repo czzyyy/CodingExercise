@@ -9,8 +9,8 @@ def train(filname, savename):
 
 
 if __name__ == '__main__':
-    segmentname = 'F:/python_code/text/news_sohusite_xml_full/news_sohusite_segment.dat'
-    modelname = 'F:/python_code/text/news_sohusite_xml_full/news_sohusite_model.bin'
+    segmentname = 'some_text_data/news_sohusite_xml_full/news_sohusite_segment.dat'
+    modelname = 'some_text_data/news_sohusite_xml_full/news_sohusite_model.bin'
     # train(segmentname, modlename)
     model = word2vec.Word2Vec.load(modelname)
     print(model.similarity(u"百姓", u"人民"))
