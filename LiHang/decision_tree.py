@@ -19,7 +19,7 @@ class Decision_Tree(object):
     def __init__(self, feature_num, threshold, tree_type='ID3'):
         self.tree_type = tree_type
         self.threshold = threshold
-        self.feature_num = feature_num
+        self.feature_num = feature_num  # 特征维度
         self.root = None
         self.train_x = None
         self.train_y = None
@@ -72,7 +72,8 @@ class Decision_Tree(object):
         print('train start')
         self.root = self.recurse_create(self.train_x, self.train_y, [i for i in range(self.feature_num)])
         print('train over')
-
+    
+    # 递归构建
     def recurse_create(self, train_x, train_y, features):
         label_set = set(train_y)
         if len(label_set) == 1:
@@ -151,3 +152,24 @@ class Decision_Tree(object):
         while temp_root.class_label is None:
             temp_root = temp_root.dict[x[temp_root.split]]
         print('predict:', temp_root.class_label)
+
+#简单使用
+# import LiHang.decision_tree as dt
+# a_dec_tree = dt.Decision_Tree(784, 0.1, 'ID3')
+# datasets = a_dec_tree.load_csv('data/train.csv')
+# a_dec_tree.split_dataset(datasets, 0.7)
+# for i in range(len(a_dec_tree.train_x)):
+#     for j in range(len(a_dec_tree.train_x[i])):
+#         if a_dec_tree.train_x[i][j] > 30.0:
+#             a_dec_tree.train_x[i][j] = 1
+#         else:
+#             a_dec_tree.train_x[i][j] = 0
+#
+# for i in range(len(a_dec_tree.test_x)):
+#     for j in range(len(a_dec_tree.test_x[i])):
+#         if a_dec_tree.test_x[i][j] > 30.0:
+#             a_dec_tree.test_x[i][j] = 1
+#         else:
+#             a_dec_tree.test_x[i][j] = 0
+# a_dec_tree.train()
+# a_dec_tree.test()
