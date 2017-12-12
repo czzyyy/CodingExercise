@@ -76,3 +76,24 @@ class Logistic_Regression(object):
             print('pred:', 0)
         else:
             print('pred:', 1)
+   
+#简单使用
+# import LiHang.logistics_regression as lr
+# a_logistic_reg = lr.Logistic_Regression(0.01, 1000)
+# datasets = a_logistic_reg.load_csv('data/train_binary.csv')
+# a_logistic_reg.split_dataset(datasets, 0.7)
+# for i in range(len(a_logistic_reg.train_x)):
+#     for j in range(len(a_logistic_reg.train_x[i])):
+#         if a_logistic_reg.train_x[i][j] > 30.0:
+#             a_logistic_reg.train_x[i][j] = 1
+#         else:
+#             a_logistic_reg.train_x[i][j] = 0
+#
+# for i in range(len(a_logistic_reg.test_x)):
+#     for j in range(len(a_logistic_reg.test_x[i])):
+#         if a_logistic_reg.test_x[i][j] > 30.0:
+#             a_logistic_reg.test_x[i][j] = 1
+#         else:
+#             a_logistic_reg.test_x[i][j] = 0
+# a_logistic_reg.train()
+# a_logistic_reg.test()
