@@ -191,3 +191,11 @@ class Simple_Boost(object):
             if int(pred) == int(self.test_y[i]):
                 result += 1
         print("acc:", float(result) / float(len(self.test_y)))
+        
+#简单使用
+# import LiHang.ada_boost as ab
+# a_ada_boost = ab.Simple_Boost()
+# datasets = a_ada_boost.load_csv('data/train_binary.csv')
+# a_ada_boost.split_dataset(datasets, 0.7, 'binary')
+# a_ada_boost.train()
+# a_ada_boost.predict()
