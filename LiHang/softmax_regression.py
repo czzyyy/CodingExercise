@@ -98,3 +98,18 @@ class Softmax_Regression(object):
                 max_pred = preds
                 pred = i
         print('pred:', pred)
+  
+#简单使用
+# import LiHang.softmax_regression as sr
+# a_softmax_reg = sr.Softmax_Regression(0.000001, 200000, 10)
+# datasets = a_softmax_reg.load_csv('data/train.csv')
+# a_softmax_reg.split_dataset(datasets, 0.7)
+# a_softmax_reg.train()
+# a_softmax_reg.test()
+#
+# import load_img_for_mnist as load
+# im_test = load.imageprepare('some_pic_like_three.png')
+# print('shape:', len(im_test))
+# print('img_data:', im_test)
+#
+# a_softmax_reg.predict(im_test)
